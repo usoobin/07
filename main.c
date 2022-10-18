@@ -3,21 +3,23 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
+int counter;
+
+void set_counter()
+{
+	counter = 20;
+ } 
+
 int main(int argc, char *argv[]) 
 {
-	int i = 10;
-	printf("함수 호출전 i=%d\n",i);
-	inc(i);
-	printf("함수 호출후 i=%d\n",i);
+	printf("counter=%d\n",counter);
+	set_counter();
+	printf("counter=%d\n",counter);
 
 	return 0;
 }
 
-int inc(int counter)  //void는 compile 오류가  뜬 다  
-{
-	counter++;
-	return counter;
- } 
- 
+
+
  
  
